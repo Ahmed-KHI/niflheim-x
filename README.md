@@ -13,7 +13,7 @@
 ---
 
 [![PyPI version](https://img.shields.io/pypi/v/niflheim-x?style=for-the-badge&logo=pypi&logoColor=white&color=4A90E2)](https://pypi.org/project/niflheim-x/)
-[![PyPI - Downloads](https://img.shields.io/pypi/dm/niflheim-x?style=for-the-badge&logo=pypi&logoColor=white&color=green)](https://pypi.org/project/niflheim-x/)
+[![PyPI Status](https://img.shields.io/pypi/status/niflheim-x?style=for-the-badge&logo=pypi&logoColor=white)](https://pypi.org/project/niflheim-x/)
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/niflheim-x?style=for-the-badge&logo=python&logoColor=white)](https://pypi.org/project/niflheim-x/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](https://opensource.org/licenses/MIT)
 
