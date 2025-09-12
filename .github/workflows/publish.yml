@@ -4,13 +4,20 @@ on:
   release:
     types: [published]
   workflow_dispatch:  # Allow manual trigger for testing
+    inputs:
+      test_publish:
+        description: 'Publish to TestPyPI instead of PyPI'
+        required: false
+        default: true
+        type: boolean
 
 jobs:
   test-publish:
-    if: github.event_name == 'workflow_dispatch'
+    if: github.event_name == 'workflow_dispatch' && (inputs.test_publish == true || inputs.test_publish == null)
     runs-on: ubuntu-latest
     permissions:
       id-token: write  # For trusted publishing
+      contents: read
     
     steps:
     - uses: actions/checkout@v4
@@ -39,10 +46,11 @@ jobs:
         repository-url: https://test.pypi.org/legacy/
   
   publish:
-    if: github.event_name == 'release'
+    if: github.event_name == 'release' || (github.event_name == 'workflow_dispatch' && inputs.test_publish == false)
     runs-on: ubuntu-latest
     permissions:
       id-token: write  # For trusted publishing
+      contents: read
     
     steps:
     - uses: actions/checkout@v4
