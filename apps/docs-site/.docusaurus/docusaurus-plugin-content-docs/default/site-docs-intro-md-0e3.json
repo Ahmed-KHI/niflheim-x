@@ -1,0 +1,23 @@
+{
+  "id": "intro",
+  "title": "Introduction to Niflheim-X",
+  "description": "Niflheim-X is the next-generation AI agent framework designed for enterprise applications. Built with performance, type safety, and developer experience in mind.",
+  "source": "@site/docs/intro.md",
+  "sourceDirName": ".",
+  "slug": "/intro",
+  "permalink": "/docs/intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/niflheim-x/niflheim-x/tree/main/apps/docs-site/docs/intro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Getting Started",
+    "permalink": "/docs/getting-started"
+  }
+}

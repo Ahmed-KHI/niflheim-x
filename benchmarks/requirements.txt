@@ -1,0 +1,33 @@
+# Niflheim-X Benchmark Suite Requirements
+
+# Core dependencies
+asyncio
+psutil>=5.9.0
+pandas>=1.5.0
+numpy>=1.24.0
+matplotlib>=3.6.0
+seaborn>=0.12.0
+
+# Data processing
+openpyxl>=3.1.0
+xlsxwriter>=3.0.0
+
+# Framework-specific dependencies
+openai>=1.0.0
+langchain>=0.1.0
+langchain-openai>=0.0.5
+
+# Development and testing
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+pytest-benchmark>=4.0.0
+
+# Utilities
+python-dotenv>=1.0.0
+click>=8.1.0
+rich>=13.0.0
+tabulate>=0.9.0
+tqdm>=4.65.0
+colorama>=0.4.6
+aiohttp>=3.8.0
+asyncio-throttle>=1.0.0

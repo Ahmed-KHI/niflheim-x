@@ -1,0 +1,27 @@
+{
+  "id": "core/llms",
+  "title": "LLM Providers",
+  "description": "LLM Providers are the backbone of Niflheim-X, enabling integration with various language models from different vendors. The framework supports a unified interface for multiple providers.",
+  "source": "@site/docs/core/llms.md",
+  "sourceDirName": "core",
+  "slug": "/core/llms",
+  "permalink": "/docs/core/llms",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/niflheim-x/niflheim-x/tree/main/apps/docs-site/docs/core/llms.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Tools",
+    "permalink": "/docs/core/tools"
+  },
+  "next": {
+    "title": "Observability",
+    "permalink": "/docs/enterprise/observability"
+  }
+}

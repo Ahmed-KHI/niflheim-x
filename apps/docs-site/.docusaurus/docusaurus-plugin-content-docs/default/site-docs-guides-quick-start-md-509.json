@@ -1,0 +1,27 @@
+{
+  "id": "guides/quick-start",
+  "title": "Quick Start Guide",
+  "description": "Get up and running with Niflheim-X in under 5 minutes. This guide will walk you through installation, basic setup, and your first AI agent.",
+  "source": "@site/docs/guides/quick-start.md",
+  "sourceDirName": "guides",
+  "slug": "/guides/quick-start",
+  "permalink": "/docs/guides/quick-start",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/niflheim-x/niflheim-x/tree/main/apps/docs-site/docs/guides/quick-start.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Getting Started",
+    "permalink": "/docs/getting-started"
+  },
+  "next": {
+    "title": "Agents",
+    "permalink": "/docs/core/agents"
+  }
+}

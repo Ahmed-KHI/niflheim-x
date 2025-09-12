@@ -1,0 +1,27 @@
+{
+  "id": "enterprise/observability",
+  "title": "Observability",
+  "description": "Enterprise-grade observability for monitoring, debugging, and optimizing AI agent performance in production environments.",
+  "source": "@site/docs/enterprise/observability.md",
+  "sourceDirName": "enterprise",
+  "slug": "/enterprise/observability",
+  "permalink": "/docs/enterprise/observability",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/niflheim-x/niflheim-x/tree/main/apps/docs-site/docs/enterprise/observability.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "LLM Providers",
+    "permalink": "/docs/core/llms"
+  },
+  "next": {
+    "title": "Simple Q&A Bot",
+    "permalink": "/docs/examples/simple-qa-bot"
+  }
+}

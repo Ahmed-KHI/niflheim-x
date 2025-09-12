@@ -1,0 +1,27 @@
+{
+  "id": "core/memory",
+  "title": "Memory Systems",
+  "description": "Memory is crucial for creating conversational AI that maintains context across interactions. Niflheim-X provides flexible memory backends for different use cases.",
+  "source": "@site/docs/core/memory.md",
+  "sourceDirName": "core",
+  "slug": "/core/memory",
+  "permalink": "/docs/core/memory",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/niflheim-x/niflheim-x/tree/main/apps/docs-site/docs/core/memory.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Agents",
+    "permalink": "/docs/core/agents"
+  },
+  "next": {
+    "title": "Tools",
+    "permalink": "/docs/core/tools"
+  }
+}

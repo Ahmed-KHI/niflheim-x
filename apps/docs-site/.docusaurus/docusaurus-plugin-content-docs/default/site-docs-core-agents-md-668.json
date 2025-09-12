@@ -1,0 +1,27 @@
+{
+  "id": "core/agents",
+  "title": "Agents",
+  "description": "The Agent is the central component of Niflheim-X. It orchestrates conversations, manages memory, executes tools, and provides a unified interface for AI interactions.",
+  "source": "@site/docs/core/agents.md",
+  "sourceDirName": "core",
+  "slug": "/core/agents",
+  "permalink": "/docs/core/agents",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/niflheim-x/niflheim-x/tree/main/apps/docs-site/docs/core/agents.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Quick Start Guide",
+    "permalink": "/docs/guides/quick-start"
+  },
+  "next": {
+    "title": "Memory Systems",
+    "permalink": "/docs/core/memory"
+  }
+}

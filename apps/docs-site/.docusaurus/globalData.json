@@ -1,0 +1,73 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "core/agents",
+              "path": "/docs/core/agents",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "core/llms",
+              "path": "/docs/core/llms",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "core/memory",
+              "path": "/docs/core/memory",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "core/tools",
+              "path": "/docs/core/tools",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "enterprise/observability",
+              "path": "/docs/enterprise/observability",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "examples/simple-qa-bot",
+              "path": "/docs/examples/simple-qa-bot",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "getting-started",
+              "path": "/docs/getting-started",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "guides/quick-start",
+              "path": "/docs/guides/quick-start",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/docs/intro",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/intro",
+                "label": "intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

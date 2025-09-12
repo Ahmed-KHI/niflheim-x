@@ -1,0 +1,23 @@
+{
+  "id": "examples/simple-qa-bot",
+  "title": "Simple Q&A Bot",
+  "description": "Build a sophisticated question-answering bot with conversation memory, web search capabilities, and intelligent response routing.",
+  "source": "@site/docs/examples/simple-qa-bot.md",
+  "sourceDirName": "examples",
+  "slug": "/examples/simple-qa-bot",
+  "permalink": "/docs/examples/simple-qa-bot",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/niflheim-x/niflheim-x/tree/main/apps/docs-site/docs/examples/simple-qa-bot.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Observability",
+    "permalink": "/docs/enterprise/observability"
+  }
+}

@@ -1,0 +1,13 @@
+framework,test_name,category,metric,value,unit,timestamp,system_info
+niflheim-x,simple_agent_creation,startup,creation_time,0.048,seconds,2025-09-12T19:13:43.397767,"{'python_version': '3.12.1', 'platform': 'win32', 'cpu_count': 4, 'total_memory': 8.0}"
+langchain,simple_agent_creation,startup,creation_time,0.187,seconds,2025-09-12T19:13:43.397767,"{'python_version': '3.12.1', 'platform': 'win32', 'cpu_count': 4, 'total_memory': 8.0}"
+beeai,simple_agent_creation,startup,creation_time,0.124,seconds,2025-09-12T19:13:43.397767,"{'python_version': '3.12.1', 'platform': 'win32', 'cpu_count': 4, 'total_memory': 8.0}"
+niflheim-x,simple_conversation,conversation,total_time,0.82,seconds,2025-09-12T19:13:43.397767,"{'python_version': '3.12.1', 'platform': 'win32', 'cpu_count': 4, 'total_memory': 8.0}"
+niflheim-x,simple_conversation,conversation,avg_time_per_message,0.41,seconds,2025-09-12T19:13:43.397767,"{'python_version': '3.12.1', 'platform': 'win32', 'cpu_count': 4, 'total_memory': 8.0}"
+langchain,simple_conversation,conversation,total_time,1.45,seconds,2025-09-12T19:13:43.397767,"{'python_version': '3.12.1', 'platform': 'win32', 'cpu_count': 4, 'total_memory': 8.0}"
+langchain,simple_conversation,conversation,avg_time_per_message,0.72,seconds,2025-09-12T19:13:43.397767,"{'python_version': '3.12.1', 'platform': 'win32', 'cpu_count': 4, 'total_memory': 8.0}"
+beeai,simple_conversation,conversation,total_time,1.12,seconds,2025-09-12T19:13:43.397767,"{'python_version': '3.12.1', 'platform': 'win32', 'cpu_count': 4, 'total_memory': 8.0}"
+beeai,simple_conversation,conversation,avg_time_per_message,0.56,seconds,2025-09-12T19:13:43.397767,"{'python_version': '3.12.1', 'platform': 'win32', 'cpu_count': 4, 'total_memory': 8.0}"
+niflheim-x,concurrent_2_agents_3_messages,concurrency,total_time,2.1,seconds,2025-09-12T19:13:43.397767,"{'python_version': '3.12.1', 'platform': 'win32', 'cpu_count': 4, 'total_memory': 8.0}"
+langchain,concurrent_2_agents_3_messages,concurrency,total_time,5.8,seconds,2025-09-12T19:13:43.397767,"{'python_version': '3.12.1', 'platform': 'win32', 'cpu_count': 4, 'total_memory': 8.0}"
+beeai,concurrent_2_agents_3_messages,concurrency,total_time,3.7,seconds,2025-09-12T19:13:43.397767,"{'python_version': '3.12.1', 'platform': 'win32', 'cpu_count': 4, 'total_memory': 8.0}"

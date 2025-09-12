@@ -1,0 +1,94 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "niflheim-x"
+version = "0.1.0"
+description = "A lightweight, composable Agent Orchestration Framework - the fast alternative to LangChain"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Ahmed KHI", email = "ahmed@khitech.dev"}
+]
+maintainers = [
+    {name = "Ahmed KHI", email = "ahmed@khitech.dev"}
+]
+keywords = ["ai", "agents", "llm", "orchestration", "framework", "python"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic>=2.0.0",
+    "httpx>=0.24.0",
+    "typing-extensions>=4.5.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.5.0",
+    "pre-commit>=3.0.0",
+]
+sqlite = [
+    "aiosqlite>=0.19.0",
+]
+vector = [
+    "numpy>=1.24.0",
+    "faiss-cpu>=1.7.4",
+]
+
+[project.urls]
+Homepage = "https://github.com/Ahmed-KHI/niflheim-x"
+Repository = "https://github.com/Ahmed-KHI/niflheim-x"
+Documentation = "https://github.com/Ahmed-KHI/niflheim-x#readme"
+"Bug Tracker" = "https://github.com/Ahmed-KHI/niflheim-x/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["niflheim_x*"]
+
+[tool.black]
+line-length = 88
+target-version = ['py310']
+include = '\.pyi?$'
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+select = ["E", "F", "W", "B", "I", "N", "UP"]
+ignore = ["E501", "B008"]
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_unreachable = true
+strict_equality = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short"
+asyncio_mode = "auto"

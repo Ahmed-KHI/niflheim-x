@@ -1,0 +1,421 @@
+{
+  "e_commerce": {
+    "name": "SmartCommerce Platform",
+    "description": "E-commerce platform with AI-powered customer service, product recommendations, and inventory management",
+    "industry": "E-commerce/Retail",
+    "complexity": "High",
+    "agents": {
+      "customer_service": {
+        "purpose": "Handle customer inquiries, order tracking, returns",
+        "tools": [
+          "order_lookup",
+          "inventory_check",
+          "payment_processor",
+          "shipping_tracker"
+        ],
+        "memory": "persistent_customer_history",
+        "features": [
+          "24/7 availability",
+          "multilingual support",
+          "escalation to humans"
+        ]
+      },
+      "product_recommender": {
+        "purpose": "Analyze user behavior and recommend products",
+        "tools": [
+          "user_analytics",
+          "product_database",
+          "purchase_history",
+          "trend_analysis"
+        ],
+        "memory": "user_preferences",
+        "features": [
+          "personalization",
+          "cross-selling",
+          "upselling"
+        ]
+      },
+      "inventory_manager": {
+        "purpose": "Monitor stock levels and predict demand",
+        "tools": [
+          "inventory_api",
+          "sales_analytics",
+          "supplier_integration",
+          "demand_forecasting"
+        ],
+        "memory": "historical_data",
+        "features": [
+          "automatic reordering",
+          "price optimization",
+          "seasonal adjustments"
+        ]
+      }
+    },
+    "code_example": "\n# E-commerce Customer Service Agent\nfrom niflheim_x import Agent, OpenAIAdapter, SQLiteMemory\n\nllm = OpenAIAdapter(api_key=\"your-key\", model=\"gpt-4\")\ncustomer_agent = Agent(\n    llm=llm,\n    name=\"CustomerServiceBot\",\n    system_prompt=\"You are a helpful e-commerce customer service representative.\",\n    memory_backend=\"sqlite\",\n    db_path=\"customer_sessions.db\"\n)\n\n@customer_agent.tool(description=\"Look up order details\")\ndef get_order_info(order_id: str) -> str:\n    # Integration with order management system\n    order = OrderAPI.get_order(order_id)\n    return f\"Order {order_id}: {order.status}, Items: {order.items}\"\n\n@customer_agent.tool(description=\"Process return request\")\ndef initiate_return(order_id: str, items: str, reason: str) -> str:\n    return_id = ReturnAPI.create_return(order_id, items, reason)\n    return f\"Return created: {return_id}. Label will be emailed shortly.\"\n\n# Usage in web application\nasync def handle_customer_message(user_id: str, message: str):\n    response = await customer_agent.chat(message, session_id=user_id)\n    return response.content\n            ",
+    "benefits": [
+      "Reduced customer service costs by 60%",
+      "24/7 customer support availability",
+      "Improved customer satisfaction scores",
+      "Increased sales through smart recommendations",
+      "Automated inventory management",
+      "Multilingual customer support"
+    ],
+    "metrics": {
+      "response_time": "< 2 seconds average",
+      "accuracy": "94% customer query resolution",
+      "cost_savings": "$50K/month in support costs",
+      "revenue_increase": "15% from recommendations"
+    }
+  },
+  "healthcare": {
+    "name": "MedAssist Healthcare Platform",
+    "description": "AI-powered healthcare assistant for patient support, appointment scheduling, and medical information",
+    "industry": "Healthcare",
+    "complexity": "High",
+    "compliance": [
+      "HIPAA",
+      "GDPR",
+      "Medical Device Regulations"
+    ],
+    "agents": {
+      "patient_navigator": {
+        "purpose": "Guide patients through healthcare processes",
+        "tools": [
+          "appointment_system",
+          "insurance_checker",
+          "provider_directory",
+          "symptom_checker"
+        ],
+        "memory": "encrypted_patient_history",
+        "features": [
+          "HIPAA compliant",
+          "appointment scheduling",
+          "insurance verification"
+        ]
+      },
+      "medication_advisor": {
+        "purpose": "Provide medication information and reminders",
+        "tools": [
+          "drug_database",
+          "interaction_checker",
+          "prescription_tracker",
+          "pharmacy_locator"
+        ],
+        "memory": "medication_history",
+        "features": [
+          "drug interaction warnings",
+          "dosage reminders",
+          "side effect monitoring"
+        ]
+      },
+      "wellness_coach": {
+        "purpose": "Provide personalized health and wellness guidance",
+        "tools": [
+          "fitness_tracker",
+          "nutrition_database",
+          "health_metrics",
+          "goal_tracker"
+        ],
+        "memory": "wellness_profile",
+        "features": [
+          "personalized plans",
+          "progress tracking",
+          "motivational support"
+        ]
+      }
+    },
+    "code_example": "\n# Healthcare Patient Navigator\nfrom niflheim_x import Agent, OpenAIAdapter, SQLiteMemory\n\nllm = OpenAIAdapter(api_key=\"your-key\", model=\"gpt-4\")\npatient_navigator = Agent(\n    llm=llm,\n    name=\"PatientNavigator\",\n    system_prompt=\"\"\"You are a healthcare assistant. Provide helpful medical \n    information while always recommending patients consult healthcare professionals \n    for medical advice. Maintain patient privacy and confidentiality.\"\"\",\n    memory_backend=\"sqlite\",\n    db_path=\"patient_sessions_encrypted.db\"\n)\n\n@patient_navigator.tool(description=\"Check appointment availability\")\ndef check_appointments(provider_id: str, date: str, time_preference: str) -> str:\n    # Integration with healthcare system\n    slots = HealthcareAPI.get_available_slots(provider_id, date)\n    return f\"Available appointments: {slots}\"\n\n@patient_navigator.tool(description=\"Verify insurance coverage\")\ndef verify_insurance(patient_id: str, procedure_code: str) -> str:\n    coverage = InsuranceAPI.check_coverage(patient_id, procedure_code)\n    return f\"Coverage: {coverage.status}, Copay: ${coverage.copay}\"\n\n# HIPAA-compliant session handling\nasync def handle_patient_inquiry(patient_id: str, message: str):\n    # Encrypt patient data and use secure session\n    response = await patient_navigator.chat(\n        message, \n        session_id=encrypt_patient_id(patient_id)\n    )\n    return response.content\n            ",
+    "benefits": [
+      "Improved patient engagement and satisfaction",
+      "Reduced administrative burden on staff",
+      "24/7 patient support availability",
+      "Better medication adherence",
+      "Streamlined appointment scheduling",
+      "Enhanced care coordination"
+    ],
+    "metrics": {
+      "patient_satisfaction": "92% satisfaction rate",
+      "appointment_scheduling": "40% faster booking process",
+      "medication_adherence": "25% improvement",
+      "staff_time_saved": "30% reduction in admin tasks"
+    }
+  },
+  "fintech": {
+    "name": "WealthGuard Financial Platform",
+    "description": "AI-powered financial advisor and banking assistant with fraud detection and investment guidance",
+    "industry": "Financial Services",
+    "complexity": "Very High",
+    "compliance": [
+      "SOX",
+      "PCI DSS",
+      "GDPR",
+      "Financial Regulations"
+    ],
+    "agents": {
+      "financial_advisor": {
+        "purpose": "Provide personalized investment advice and portfolio management",
+        "tools": [
+          "market_data",
+          "portfolio_analyzer",
+          "risk_calculator",
+          "tax_optimizer"
+        ],
+        "memory": "financial_profile",
+        "features": [
+          "risk assessment",
+          "goal-based planning",
+          "tax optimization"
+        ]
+      },
+      "fraud_detector": {
+        "purpose": "Monitor transactions for suspicious activity",
+        "tools": [
+          "transaction_analyzer",
+          "pattern_recognition",
+          "ml_models",
+          "alert_system"
+        ],
+        "memory": "transaction_history",
+        "features": [
+          "real-time monitoring",
+          "risk scoring",
+          "automated blocking"
+        ]
+      },
+      "customer_banker": {
+        "purpose": "Handle banking inquiries and account management",
+        "tools": [
+          "account_api",
+          "transaction_lookup",
+          "loan_calculator",
+          "credit_analyzer"
+        ],
+        "memory": "customer_relationship",
+        "features": [
+          "account management",
+          "loan applications",
+          "financial education"
+        ]
+      }
+    },
+    "code_example": "\n# Financial Advisor Agent\nfrom niflheim_x import Agent, OpenAIAdapter, SQLiteMemory\n\nllm = OpenAIAdapter(api_key=\"your-key\", model=\"gpt-4\")\nfinancial_advisor = Agent(\n    llm=llm,\n    name=\"FinancialAdvisor\",\n    system_prompt=\"\"\"You are a certified financial advisor. Provide investment \n    guidance based on user's risk tolerance and financial goals. Always include \n    appropriate disclaimers about investment risks.\"\"\",\n    memory_backend=\"sqlite\",\n    db_path=\"client_profiles_encrypted.db\"\n)\n\n@financial_advisor.tool(description=\"Analyze portfolio performance\")\ndef analyze_portfolio(portfolio_id: str) -> str:\n    portfolio = PortfolioAPI.get_portfolio(portfolio_id)\n    performance = AnalyticsEngine.calculate_performance(portfolio)\n    return f\"Performance: {performance.ytd}% YTD, Risk Score: {performance.risk}\"\n\n@financial_advisor.tool(description=\"Calculate optimal asset allocation\")\ndef optimize_allocation(risk_tolerance: str, time_horizon: int, goals: str) -> str:\n    allocation = OptimizationEngine.calculate_allocation(\n        risk_tolerance, time_horizon, goals\n    )\n    return f\"Recommended allocation: {allocation}\"\n\n# Secure financial consultation\nasync def provide_financial_advice(client_id: str, query: str):\n    # Verify client authentication and encryption\n    response = await financial_advisor.chat(\n        query, \n        session_id=secure_client_session(client_id)\n    )\n    return response.content\n            ",
+    "benefits": [
+      "Democratized access to financial advice",
+      "Reduced fraud losses through AI detection",
+      "Improved customer financial literacy",
+      "24/7 banking support availability",
+      "Personalized investment strategies",
+      "Enhanced compliance monitoring"
+    ],
+    "metrics": {
+      "fraud_detection": "99.7% accuracy rate",
+      "customer_satisfaction": "89% satisfaction with AI advisor",
+      "cost_reduction": "45% reduction in operational costs",
+      "portfolio_performance": "12% average annual returns"
+    }
+  },
+  "education": {
+    "name": "LearnSmart Educational Platform",
+    "description": "AI-powered learning platform with personalized tutoring, assessment, and progress tracking",
+    "industry": "Education Technology",
+    "complexity": "Medium-High",
+    "agents": {
+      "personal_tutor": {
+        "purpose": "Provide personalized tutoring across subjects",
+        "tools": [
+          "curriculum_database",
+          "learning_analytics",
+          "progress_tracker",
+          "assessment_engine"
+        ],
+        "memory": "learning_profile",
+        "features": [
+          "adaptive learning",
+          "multiple learning styles",
+          "progress tracking"
+        ]
+      },
+      "assignment_helper": {
+        "purpose": "Assist with homework and projects",
+        "tools": [
+          "subject_databases",
+          "citation_generator",
+          "plagiarism_checker",
+          "research_assistant"
+        ],
+        "memory": "academic_history",
+        "features": [
+          "step-by-step guidance",
+          "academic integrity",
+          "research skills"
+        ]
+      },
+      "career_counselor": {
+        "purpose": "Provide career guidance and planning",
+        "tools": [
+          "career_database",
+          "skills_analyzer",
+          "job_market_data",
+          "pathway_planner"
+        ],
+        "memory": "career_interests",
+        "features": [
+          "career exploration",
+          "skill gap analysis",
+          "educational planning"
+        ]
+      }
+    },
+    "code_example": "\n# Personalized Tutor Agent\nfrom niflheim_x import Agent, OpenAIAdapter, SQLiteMemory\n\nllm = OpenAIAdapter(api_key=\"your-key\", model=\"gpt-4\")\npersonal_tutor = Agent(\n    llm=llm,\n    name=\"PersonalTutor\",\n    system_prompt=\"\"\"You are an experienced educator and tutor. Adapt your \n    teaching style to each student's learning preferences. Encourage critical \n    thinking and provide clear explanations.\"\"\",\n    memory_backend=\"sqlite\",\n    db_path=\"student_profiles.db\"\n)\n\n@personal_tutor.tool(description=\"Assess student understanding\")\ndef assess_comprehension(topic: str, student_response: str) -> str:\n    assessment = LearningAnalytics.analyze_response(topic, student_response)\n    return f\"Understanding level: {assessment.level}, Areas to improve: {assessment.gaps}\"\n\n@personal_tutor.tool(description=\"Generate practice problems\")\ndef create_practice_problems(subject: str, difficulty: str, count: int) -> str:\n    problems = ContentGenerator.generate_problems(subject, difficulty, count)\n    return f\"Generated {count} {difficulty} problems for {subject}\"\n\n# Personalized learning session\nasync def tutoring_session(student_id: str, subject: str, question: str):\n    response = await personal_tutor.chat(\n        f\"Subject: {subject}\nQuestion: {question}\",\n        session_id=student_id\n    )\n    return response.content\n            ",
+    "benefits": [
+      "Personalized learning experiences",
+      "24/7 tutoring availability",
+      "Improved student engagement",
+      "Data-driven learning insights",
+      "Reduced educational costs",
+      "Enhanced teacher productivity"
+    ],
+    "metrics": {
+      "learning_improvement": "35% faster skill acquisition",
+      "student_engagement": "80% increase in time spent learning",
+      "teacher_efficiency": "50% reduction in grading time",
+      "cost_per_student": "60% lower than traditional tutoring"
+    }
+  },
+  "content_cms": {
+    "name": "ContentFlow CMS Platform",
+    "description": "AI-enhanced content management system with automated creation, optimization, and publishing",
+    "industry": "Media & Publishing",
+    "complexity": "Medium",
+    "agents": {
+      "content_creator": {
+        "purpose": "Generate and optimize content across platforms",
+        "tools": [
+          "content_templates",
+          "seo_optimizer",
+          "tone_analyzer",
+          "image_generator"
+        ],
+        "memory": "brand_guidelines",
+        "features": [
+          "multi-format creation",
+          "SEO optimization",
+          "brand consistency"
+        ]
+      },
+      "social_media_manager": {
+        "purpose": "Manage social media presence and engagement",
+        "tools": [
+          "social_apis",
+          "engagement_tracker",
+          "hashtag_generator",
+          "analytics_dashboard"
+        ],
+        "memory": "audience_insights",
+        "features": [
+          "automated posting",
+          "engagement optimization",
+          "trend analysis"
+        ]
+      },
+      "seo_specialist": {
+        "purpose": "Optimize content for search engines",
+        "tools": [
+          "keyword_research",
+          "serp_analyzer",
+          "backlink_tracker",
+          "performance_monitor"
+        ],
+        "memory": "seo_strategy",
+        "features": [
+          "keyword optimization",
+          "competitive analysis",
+          "performance tracking"
+        ]
+      }
+    },
+    "code_example": "\n# Content Creator Agent\nfrom niflheim_x import Agent, OpenAIAdapter, DictMemory\n\nllm = OpenAIAdapter(api_key=\"your-key\", model=\"gpt-4\")\ncontent_creator = Agent(\n    llm=llm,\n    name=\"ContentCreator\",\n    system_prompt=\"\"\"You are a creative content strategist and writer. \n    Create engaging, SEO-optimized content that aligns with brand guidelines \n    and audience preferences.\"\"\",\n    memory_backend=\"dict\"\n)\n\n@content_creator.tool(description=\"Research trending topics\")\ndef research_trends(industry: str, timeframe: str) -> str:\n    trends = TrendAnalyzer.get_trending_topics(industry, timeframe)\n    return f\"Trending topics in {industry}: {trends}\"\n\n@content_creator.tool(description=\"Optimize content for SEO\")\ndef seo_optimize(content: str, target_keywords: str) -> str:\n    optimized = SEOOptimizer.optimize_content(content, target_keywords)\n    return f\"SEO Score: {optimized.score}, Suggestions: {optimized.improvements}\"\n\n# Content creation workflow\nasync def create_blog_post(topic: str, target_audience: str, keywords: str):\n    prompt = f\"Create a blog post about {topic} for {target_audience}, targeting keywords: {keywords}\"\n    response = await content_creator.chat(prompt)\n    return response.content\n            ",
+    "benefits": [
+      "Automated content creation at scale",
+      "Consistent brand voice across channels",
+      "Improved SEO performance",
+      "Reduced content creation costs",
+      "Data-driven content strategy",
+      "Enhanced social media engagement"
+    ],
+    "metrics": {
+      "content_production": "300% increase in output",
+      "seo_improvement": "45% increase in organic traffic",
+      "engagement_rate": "60% improvement in social engagement",
+      "cost_per_content": "70% reduction in creation costs"
+    }
+  },
+  "enterprise": {
+    "name": "WorkflowAI Enterprise Suite",
+    "description": "AI-powered enterprise automation platform for HR, finance, and operations",
+    "industry": "Enterprise Software",
+    "complexity": "Very High",
+    "agents": {
+      "hr_assistant": {
+        "purpose": "Automate HR processes and employee support",
+        "tools": [
+          "employee_database",
+          "policy_engine",
+          "payroll_system",
+          "performance_tracker"
+        ],
+        "memory": "employee_profiles",
+        "features": [
+          "automated onboarding",
+          "policy guidance",
+          "performance reviews"
+        ]
+      },
+      "finance_controller": {
+        "purpose": "Manage financial processes and reporting",
+        "tools": [
+          "accounting_system",
+          "budget_analyzer",
+          "expense_tracker",
+          "compliance_checker"
+        ],
+        "memory": "financial_data",
+        "features": [
+          "automated reconciliation",
+          "budget monitoring",
+          "compliance reporting"
+        ]
+      },
+      "operations_manager": {
+        "purpose": "Optimize business operations and supply chain",
+        "tools": [
+          "inventory_system",
+          "supplier_network",
+          "demand_forecasting",
+          "logistics_optimizer"
+        ],
+        "memory": "operational_data",
+        "features": [
+          "supply chain optimization",
+          "predictive maintenance",
+          "resource allocation"
+        ]
+      }
+    },
+    "code_example": "\n# HR Assistant Agent\nfrom niflheim_x import Agent, OpenAIAdapter, SQLiteMemory\n\nllm = OpenAIAdapter(api_key=\"your-key\", model=\"gpt-4\")\nhr_assistant = Agent(\n    llm=llm,\n    name=\"HRAssistant\",\n    system_prompt=\"\"\"You are an HR specialist who helps with employee \n    inquiries, policy questions, and administrative tasks. Maintain \n    confidentiality and follow company policies.\"\"\",\n    memory_backend=\"sqlite\",\n    db_path=\"hr_sessions.db\"\n)\n\n@hr_assistant.tool(description=\"Look up company policies\")\ndef get_policy_info(policy_topic: str) -> str:\n    policy = PolicyEngine.lookup_policy(policy_topic)\n    return f\"Policy on {policy_topic}: {policy.summary}\"\n\n@hr_assistant.tool(description=\"Process leave request\")\ndef submit_leave_request(employee_id: str, start_date: str, end_date: str, reason: str) -> str:\n    request_id = HRSystem.submit_leave_request(employee_id, start_date, end_date, reason)\n    return f\"Leave request submitted: {request_id}. Manager approval pending.\"\n\n# Employee self-service\nasync def handle_hr_inquiry(employee_id: str, question: str):\n    response = await hr_assistant.chat(question, session_id=employee_id)\n    return response.content\n            ",
+    "benefits": [
+      "Automated routine HR tasks",
+      "Improved employee satisfaction",
+      "Reduced operational costs",
+      "Enhanced compliance monitoring",
+      "Streamlined financial processes",
+      "Data-driven decision making"
+    ],
+    "metrics": {
+      "process_automation": "80% of routine tasks automated",
+      "employee_satisfaction": "25% improvement in HR service satisfaction",
+      "cost_savings": "$2M annual savings in operational costs",
+      "compliance_accuracy": "99.5% compliance rate"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "core/tools",
+  "title": "Tools",
+  "description": "Tools extend agent capabilities by providing access to external systems, APIs, and functions. They enable agents to perform actions beyond text generation.",
+  "source": "@site/docs/core/tools.md",
+  "sourceDirName": "core",
+  "slug": "/core/tools",
+  "permalink": "/docs/core/tools",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/niflheim-x/niflheim-x/tree/main/apps/docs-site/docs/core/tools.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Memory Systems",
+    "permalink": "/docs/core/memory"
+  },
+  "next": {
+    "title": "LLM Providers",
+    "permalink": "/docs/core/llms"
+  }
+}

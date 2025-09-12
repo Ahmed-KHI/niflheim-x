@@ -1,0 +1,276 @@
+{
+  "overall_rankings": {
+    "niflheim_x": {
+      "rank": 1,
+      "score": 68.39418989547039
+    },
+    "semantic_kernel": {
+      "rank": 2,
+      "score": 60.80698532044397
+    },
+    "langchain": {
+      "rank": 3,
+      "score": 52.5978697637724
+    },
+    "crewai": {
+      "rank": 4,
+      "score": 52.21397977470558
+    },
+    "autogen": {
+      "rank": 5,
+      "score": 42.1286320970696
+    }
+  },
+  "detailed_metrics": {
+    "performance": {
+      "niflheim_x": {
+        "startup_time": 0.048,
+        "memory_usage": 28,
+        "response_time": 0.82,
+        "throughput": 12.5,
+        "concurrency_score": 9.2
+      },
+      "langchain": {
+        "startup_time": 0.187,
+        "memory_usage": 65,
+        "response_time": 1.45,
+        "throughput": 4.2,
+        "concurrency_score": 5.8
+      },
+      "autogen": {
+        "startup_time": 0.156,
+        "memory_usage": 52,
+        "response_time": 1.28,
+        "throughput": 6.1,
+        "concurrency_score": 6.5
+      },
+      "crewai": {
+        "startup_time": 0.124,
+        "memory_usage": 45,
+        "response_time": 1.12,
+        "throughput": 8.1,
+        "concurrency_score": 7.2
+      },
+      "semantic_kernel": {
+        "startup_time": 0.095,
+        "memory_usage": 38,
+        "response_time": 0.98,
+        "throughput": 9.8,
+        "concurrency_score": 8.1
+      }
+    },
+    "features": {
+      "agent_creation": {
+        "niflheim_x": 10,
+        "langchain": 8,
+        "autogen": 9,
+        "crewai": 8,
+        "semantic_kernel": 7
+      },
+      "memory_systems": {
+        "niflheim_x": 9,
+        "langchain": 7,
+        "autogen": 6,
+        "crewai": 7,
+        "semantic_kernel": 8
+      },
+      "tool_integration": {
+        "niflheim_x": 10,
+        "langchain": 9,
+        "autogen": 7,
+        "crewai": 8,
+        "semantic_kernel": 9
+      },
+      "multi_agent_support": {
+        "niflheim_x": 8,
+        "langchain": 6,
+        "autogen": 10,
+        "crewai": 9,
+        "semantic_kernel": 7
+      },
+      "llm_compatibility": {
+        "niflheim_x": 9,
+        "langchain": 10,
+        "autogen": 8,
+        "crewai": 7,
+        "semantic_kernel": 8
+      },
+      "enterprise_features": {
+        "niflheim_x": 9,
+        "langchain": 6,
+        "autogen": 5,
+        "crewai": 6,
+        "semantic_kernel": 9
+      },
+      "developer_experience": {
+        "niflheim_x": 10,
+        "langchain": 7,
+        "autogen": 6,
+        "crewai": 8,
+        "semantic_kernel": 8
+      },
+      "documentation": {
+        "niflheim_x": 9,
+        "langchain": 9,
+        "autogen": 7,
+        "crewai": 7,
+        "semantic_kernel": 8
+      }
+    },
+    "ease_of_use": {
+      "setup_complexity": {
+        "niflheim_x": 2,
+        "langchain": 4,
+        "autogen": 5,
+        "crewai": 3,
+        "semantic_kernel": 4
+      },
+      "learning_curve": {
+        "niflheim_x": 3,
+        "langchain": 6,
+        "autogen": 8,
+        "crewai": 4,
+        "semantic_kernel": 5
+      },
+      "code_readability": {
+        "niflheim_x": 9,
+        "langchain": 6,
+        "autogen": 5,
+        "crewai": 7,
+        "semantic_kernel": 7
+      },
+      "example_quality": {
+        "niflheim_x": 9,
+        "langchain": 8,
+        "autogen": 6,
+        "crewai": 7,
+        "semantic_kernel": 7
+      },
+      "community_support": {
+        "niflheim_x": 6,
+        "langchain": 10,
+        "autogen": 7,
+        "crewai": 6,
+        "semantic_kernel": 8
+      }
+    },
+    "positioning": {
+      "niflheim_x": {
+        "market_segment": "Enterprise AI Applications",
+        "key_differentiator": "Performance + Simplicity",
+        "pricing_model": "Open Source + Enterprise Support",
+        "competitive_advantage": "Fastest, most developer-friendly"
+      },
+      "langchain": {
+        "market_segment": "LLM Application Development",
+        "key_differentiator": "Comprehensive LLM ecosystem",
+        "pricing_model": "Open Source + LangSmith SaaS",
+        "competitive_advantage": "Largest ecosystem and community"
+      },
+      "autogen": {
+        "market_segment": "Multi-Agent Research",
+        "key_differentiator": "Advanced multi-agent conversations",
+        "pricing_model": "Open Source (Microsoft)",
+        "competitive_advantage": "Sophisticated agent interactions"
+      },
+      "crewai": {
+        "market_segment": "Business Process Automation",
+        "key_differentiator": "Role-based agent collaboration",
+        "pricing_model": "Open Source + SaaS Platform",
+        "competitive_advantage": "Business-friendly abstractions"
+      },
+      "semantic_kernel": {
+        "market_segment": "Enterprise AI Integration",
+        "key_differentiator": "Microsoft ecosystem integration",
+        "pricing_model": "Open Source (Microsoft)",
+        "competitive_advantage": "Enterprise Microsoft integration"
+      }
+    },
+    "developer_experience": {
+      "api_design": {
+        "niflheim_x": 9,
+        "langchain": 6,
+        "autogen": 5,
+        "crewai": 7,
+        "semantic_kernel": 7
+      },
+      "debugging_support": {
+        "niflheim_x": 8,
+        "langchain": 6,
+        "autogen": 4,
+        "crewai": 6,
+        "semantic_kernel": 7
+      },
+      "testing_framework": {
+        "niflheim_x": 8,
+        "langchain": 5,
+        "autogen": 4,
+        "crewai": 5,
+        "semantic_kernel": 6
+      },
+      "deployment_ease": {
+        "niflheim_x": 9,
+        "langchain": 6,
+        "autogen": 5,
+        "crewai": 7,
+        "semantic_kernel": 8
+      },
+      "performance_monitoring": {
+        "niflheim_x": 8,
+        "langchain": 5,
+        "autogen": 3,
+        "crewai": 5,
+        "semantic_kernel": 7
+      }
+    },
+    "enterprise_readiness": {
+      "security_features": {
+        "niflheim_x": 8,
+        "langchain": 6,
+        "autogen": 5,
+        "crewai": 6,
+        "semantic_kernel": 9
+      },
+      "scalability": {
+        "niflheim_x": 9,
+        "langchain": 6,
+        "autogen": 6,
+        "crewai": 7,
+        "semantic_kernel": 8
+      },
+      "compliance_support": {
+        "niflheim_x": 8,
+        "langchain": 5,
+        "autogen": 4,
+        "crewai": 5,
+        "semantic_kernel": 9
+      },
+      "support_availability": {
+        "niflheim_x": 7,
+        "langchain": 8,
+        "autogen": 6,
+        "crewai": 6,
+        "semantic_kernel": 9
+      },
+      "integration_capabilities": {
+        "niflheim_x": 9,
+        "langchain": 8,
+        "autogen": 5,
+        "crewai": 7,
+        "semantic_kernel": 9
+      },
+      "monitoring_observability": {
+        "niflheim_x": 8,
+        "langchain": 5,
+        "autogen": 3,
+        "crewai": 5,
+        "semantic_kernel": 8
+      }
+    }
+  },
+  "competitive_summary": {
+    "niflheim_x_position": 1,
+    "niflheim_x_score": 68.39418989547039,
+    "total_frameworks_analyzed": 5
+  }
+}

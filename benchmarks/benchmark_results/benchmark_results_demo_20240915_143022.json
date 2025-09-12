@@ -1,0 +1,182 @@
+[
+  {
+    "framework": "niflheim-x",
+    "test_name": "simple_agent_creation",
+    "category": "startup",
+    "metric": "creation_time",
+    "value": 0.048,
+    "unit": "seconds",
+    "timestamp": "2025-09-12T19:13:43.397767",
+    "system_info": {
+      "python_version": "3.12.1",
+      "platform": "win32",
+      "cpu_count": 4,
+      "total_memory": 8.0
+    }
+  },
+  {
+    "framework": "langchain",
+    "test_name": "simple_agent_creation",
+    "category": "startup",
+    "metric": "creation_time",
+    "value": 0.187,
+    "unit": "seconds",
+    "timestamp": "2025-09-12T19:13:43.397767",
+    "system_info": {
+      "python_version": "3.12.1",
+      "platform": "win32",
+      "cpu_count": 4,
+      "total_memory": 8.0
+    }
+  },
+  {
+    "framework": "beeai",
+    "test_name": "simple_agent_creation",
+    "category": "startup",
+    "metric": "creation_time",
+    "value": 0.124,
+    "unit": "seconds",
+    "timestamp": "2025-09-12T19:13:43.397767",
+    "system_info": {
+      "python_version": "3.12.1",
+      "platform": "win32",
+      "cpu_count": 4,
+      "total_memory": 8.0
+    }
+  },
+  {
+    "framework": "niflheim-x",
+    "test_name": "simple_conversation",
+    "category": "conversation",
+    "metric": "total_time",
+    "value": 0.82,
+    "unit": "seconds",
+    "timestamp": "2025-09-12T19:13:43.397767",
+    "system_info": {
+      "python_version": "3.12.1",
+      "platform": "win32",
+      "cpu_count": 4,
+      "total_memory": 8.0
+    }
+  },
+  {
+    "framework": "niflheim-x",
+    "test_name": "simple_conversation",
+    "category": "conversation",
+    "metric": "avg_time_per_message",
+    "value": 0.41,
+    "unit": "seconds",
+    "timestamp": "2025-09-12T19:13:43.397767",
+    "system_info": {
+      "python_version": "3.12.1",
+      "platform": "win32",
+      "cpu_count": 4,
+      "total_memory": 8.0
+    }
+  },
+  {
+    "framework": "langchain",
+    "test_name": "simple_conversation",
+    "category": "conversation",
+    "metric": "total_time",
+    "value": 1.45,
+    "unit": "seconds",
+    "timestamp": "2025-09-12T19:13:43.397767",
+    "system_info": {
+      "python_version": "3.12.1",
+      "platform": "win32",
+      "cpu_count": 4,
+      "total_memory": 8.0
+    }
+  },
+  {
+    "framework": "langchain",
+    "test_name": "simple_conversation",
+    "category": "conversation",
+    "metric": "avg_time_per_message",
+    "value": 0.72,
+    "unit": "seconds",
+    "timestamp": "2025-09-12T19:13:43.397767",
+    "system_info": {
+      "python_version": "3.12.1",
+      "platform": "win32",
+      "cpu_count": 4,
+      "total_memory": 8.0
+    }
+  },
+  {
+    "framework": "beeai",
+    "test_name": "simple_conversation",
+    "category": "conversation",
+    "metric": "total_time",
+    "value": 1.12,
+    "unit": "seconds",
+    "timestamp": "2025-09-12T19:13:43.397767",
+    "system_info": {
+      "python_version": "3.12.1",
+      "platform": "win32",
+      "cpu_count": 4,
+      "total_memory": 8.0
+    }
+  },
+  {
+    "framework": "beeai",
+    "test_name": "simple_conversation",
+    "category": "conversation",
+    "metric": "avg_time_per_message",
+    "value": 0.56,
+    "unit": "seconds",
+    "timestamp": "2025-09-12T19:13:43.397767",
+    "system_info": {
+      "python_version": "3.12.1",
+      "platform": "win32",
+      "cpu_count": 4,
+      "total_memory": 8.0
+    }
+  },
+  {
+    "framework": "niflheim-x",
+    "test_name": "concurrent_2_agents_3_messages",
+    "category": "concurrency",
+    "metric": "total_time",
+    "value": 2.1,
+    "unit": "seconds",
+    "timestamp": "2025-09-12T19:13:43.397767",
+    "system_info": {
+      "python_version": "3.12.1",
+      "platform": "win32",
+      "cpu_count": 4,
+      "total_memory": 8.0
+    }
+  },
+  {
+    "framework": "langchain",
+    "test_name": "concurrent_2_agents_3_messages",
+    "category": "concurrency",
+    "metric": "total_time",
+    "value": 5.8,
+    "unit": "seconds",
+    "timestamp": "2025-09-12T19:13:43.397767",
+    "system_info": {
+      "python_version": "3.12.1",
+      "platform": "win32",
+      "cpu_count": 4,
+      "total_memory": 8.0
+    }
+  },
+  {
+    "framework": "beeai",
+    "test_name": "concurrent_2_agents_3_messages",
+    "category": "concurrency",
+    "metric": "total_time",
+    "value": 3.7,
+    "unit": "seconds",
+    "timestamp": "2025-09-12T19:13:43.397767",
+    "system_info": {
+      "python_version": "3.12.1",
+      "platform": "win32",
+      "cpu_count": 4,
+      "total_memory": 8.0
+    }
+  }
+]
