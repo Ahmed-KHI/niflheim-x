@@ -21,7 +21,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/Ahmed-KHI/niflheim-x?style=for-the-badge&logo=github&logoColor=white&color=blue)](https://github.com/Ahmed-KHI/niflheim-x/network)
 [![GitHub issues](https://img.shields.io/github/issues/Ahmed-KHI/niflheim-x?style=for-the-badge&logo=github&logoColor=white&color=red)](https://github.com/Ahmed-KHI/niflheim-x/issues)
 
-[![Discord](https://img.shields.io/discord/1234567890?label=Discord&logo=discord&style=for-the-badge&color=7289da)](https://discord.gg/niflheim-x)
+[![Discord](https://img.shields.io/badge/Discord-Join%20Community-7289da?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/GrsYUcTe)
 [![Documentation](https://img.shields.io/badge/Docs-Live-brightgreen?style=for-the-badge&logo=gitbook&logoColor=white)](https://ahmed-khi.github.io/niflheim-x/)
 
 </div>
@@ -549,7 +549,7 @@ git push origin feature/amazing-feature
 <div align="center">
 
 [![Contributing Guide](https://img.shields.io/badge/🤝_Contributing_Guide-Read_Now-blue?style=for-the-badge&logo=github&logoColor=white)](CONTRIBUTING.md)
-[![Discord](https://img.shields.io/badge/💬_Discord_Community-Join_Chat-7289da?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/niflheim-x)
+[![Discord](https://img.shields.io/badge/💬_Discord_Community-Join_Chat-7289da?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/GrsYUcTe)
 
 </div>
 
@@ -598,7 +598,7 @@ If you find Niflheim-X useful, please give us a star! It helps other developers 
 
 ### 🚀 **Ready to Build the Future?**
 
-**[🎯 Get Started Now](https://ahmed-khi.github.io/niflheim-x/docs/getting-started) • [💬 Join Discord](https://discord.gg/niflheim-x) • [⭐ Star on GitHub](https://github.com/Ahmed-KHI/niflheim-x)**
+**[🎯 Get Started Now](https://ahmed-khi.github.io/niflheim-x/docs/getting-started) • [💬 Join Discord](https://discord.gg/GrsYUcTe) • [⭐ Star on GitHub](https://github.com/Ahmed-KHI/niflheim-x)**
 
 ---
 
