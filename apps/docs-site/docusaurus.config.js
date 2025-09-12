@@ -12,12 +12,12 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://framework.niflheim-x.dev',
+  url: 'https://ahmed-khi.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
-  baseUrl: '/',
+  baseUrl: '/niflheim-x/',
 
   // GitHub pages deployment config
-  organizationName: 'niflheim-x', 
+  organizationName: 'Ahmed-KHI', 
   projectName: 'niflheim-x',
 
   onBrokenLinks: 'warn',
