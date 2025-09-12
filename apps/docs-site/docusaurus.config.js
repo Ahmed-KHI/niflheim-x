@@ -37,11 +37,11 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/niflheim-x/niflheim-x/tree/main/apps/docs-site/',
+          editUrl: 'https://github.com/Ahmed-KHI/niflheim-x/tree/main/apps/docs-site/',
         },
         blog: {
           showReadingTime: true,
-          editUrl: 'https://github.com/niflheim-x/niflheim-x/tree/main/apps/docs-site/',
+          editUrl: 'https://github.com/Ahmed-KHI/niflheim-x/tree/main/apps/docs-site/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -68,24 +68,9 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          {
-            to: '/docs/api-reference/python',
-            label: 'Python API',
-            position: 'left',
-          },
-          {
-            to: '/docs/api-reference/typescript', 
-            label: 'TypeScript API',
-            position: 'left',
-          },
-          {
-            to: '/playground',
-            label: 'Playground',
-            position: 'left',
-          },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/niflheim-x/niflheim-x',
+            href: 'https://github.com/Ahmed-KHI/niflheim-x',
             label: 'GitHub',
             position: 'right',
           },
