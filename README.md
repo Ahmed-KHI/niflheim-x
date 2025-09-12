@@ -12,10 +12,10 @@
 
 ---
 
-[![PyPI version](https://img.shields.io/pypi/v/niflheim-x?style=for-the-badge&logo=pypi&logoColor=white&color=4A90E2)](https://badge.fury.io/py/niflheim-x)
+[![PyPI version](https://img.shields.io/pypi/v/niflheim-x?style=for-the-badge&logo=pypi&logoColor=white&color=4A90E2)](https://pypi.org/project/niflheim-x/)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](https://opensource.org/licenses/MIT)
-[![Downloads](https://img.shields.io/pypi/dm/niflheim-x?style=for-the-badge&logo=download&logoColor=white&color=green)](https://pepy.tech/project/niflheim-x)
+[![Downloads](https://img.shields.io/pypi/dm/niflheim-x?style=for-the-badge&logo=download&logoColor=white&color=green)](https://pypi.org/project/niflheim-x/)
 
 [![GitHub Repo stars](https://img.shields.io/github/stars/Ahmed-KHI/niflheim-x?style=for-the-badge&logo=github&logoColor=white&color=gold)](https://github.com/Ahmed-KHI/niflheim-x)
 [![GitHub forks](https://img.shields.io/github/forks/Ahmed-KHI/niflheim-x?style=for-the-badge&logo=github&logoColor=white&color=blue)](https://github.com/Ahmed-KHI/niflheim-x/network)
