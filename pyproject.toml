@@ -7,7 +7,7 @@ name = "niflheim-x"
 version = "0.1.0"
 description = "A lightweight, composable Agent Orchestration Framework - the fast alternative to LangChain"
 readme = "README.md"
-license = {text = "MIT"}
+license = "MIT"
 authors = [
     {name = "Ahmed KHI", email = "ahmed@khitech.dev"}
 ]
@@ -18,7 +18,6 @@ keywords = ["ai", "agents", "llm", "orchestration", "framework", "python"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
