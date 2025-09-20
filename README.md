@@ -26,6 +26,10 @@
 
 </div>
 
+Build production-ready AI agents in [Python](https://pypi.org/project/niflheim-x/) or [TypeScript](https://www.npmjs.com/package/niflheim-x).
+
+[Python library](https://github.com/Ahmed-KHI/niflheim-x) [TypeScript library](https://github.com/Ahmed-KHI/niflheim-x/tree/main/packages/typescript) [MIT License](https://opensource.org/licenses/MIT) [Discord Community](https://discord.gg/GrsYUcTe) [Documentation](https://ahmed-khi.github.io/niflheim-x/)
+
 ---
 
 ## 🚀 **Performance That Speaks Volumes**
