@@ -28,7 +28,7 @@
 
 Build production-ready AI agents in [Python](https://pypi.org/project/niflheim-x/) or [TypeScript](https://www.npmjs.com/package/niflheim-x).
 
-[Python library](https://github.com/Ahmed-KHI/niflheim-x) [TypeScript library](https://github.com/Ahmed-KHI/niflheim-x/tree/main/packages/typescript) [MIT License](https://opensource.org/licenses/MIT) [Discord Community](https://discord.gg/GrsYUcTe) [Documentation](https://ahmed-khi.github.io/niflheim-x/)
+[![Python library](https://img.shields.io/badge/Python-306998?style=plastic&logo=python&logoColor=white)](https://github.com/Ahmed-KHI/niflheim-x) [![TypeScript library](https://img.shields.io/badge/TypeScript-2f7bb6?style=plastic&logo=typescript&logoColor=white)](https://github.com/Ahmed-KHI/niflheim-x/tree/main/packages/typescript) [![MIT License](https://img.shields.io/badge/MIT-License-EA7826?style=plastic&logo=opensourceinitiative&logoColor=white)](https://opensource.org/licenses/MIT) [![Discord Community](https://img.shields.io/badge/Join%20our%20Discord-7289DA?style=plastic&logo=discord&logoColor=white)](https://discord.gg/GrsYUcTe) [![Documentation](https://img.shields.io/badge/Documentation-Live-brightgreen?style=plastic&logo=gitbook&logoColor=white)](https://ahmed-khi.github.io/niflheim-x/)
 
 ---
 
